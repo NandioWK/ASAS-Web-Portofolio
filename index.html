@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Level 2 ASAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--navigasi-->
+<nav class="navbar">
+	<ul class="nav-atas">
+		<li><a href="#home">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#portfolio">Portfolio</a></li>
+		<li><a href="#contact">Kontak</a></li>
+    </ul>
+</nav>
+
+<!--hero/header-->
+<section id="home" class="hero">
+	<h1>Halo Semuanyaa</h1>
+	<p>Nama Saya Nandio Difanusantara Maftuh</p>
+	<p>Saya Adalah Seorang Front End Developer</p>
+	<a href="#portfolio" class="tombol">Portfolio Saya</a>
+</section>
+
+<!--about-->
+<section id="about" class="about">
+	<h2 class="judul-besar">Tentang Saya</h2>
+	<p>Halo Semuanya, Perkenalkan Nama Saya Nandio Difanusantara Maftuh, Saya Disini Sebagai Front End Developer, Tetapi Saya Akan Pindah Profesi Menjadi WEB3 Developer Dikarenakan Front End Developer Atau Backend Developer Akan Punah, Dilihat Dari Perkembangan AI Yang Makin Mengganas.</p>
+
+<!--skill buat card-->
+	<h3 class="judul-kecil">Skill Saya</h3>
+	<div class="skill-container">
+		<div class="skill-box">
+			<h4>HTML</h4>
+			<p>Alhamdulillah Bisa Membuat Website Menggunakan HTML</p>
+		</div>
+		<div class="skill-box">
+			<h4>CSS</h4>
+			<p>Alhamdulillah Bisa Membuat Website Menggunakan HTML</p>
+		</div>
+		<div class="skill-box">
+			<h4>JavaScript</h4>
+            <p>lhamdulillah Bisa Membuat Website Menggunakan HTML</p>
+		</div>
+		<div class="skill-box">
+			<h4>Apa Saja</h4>
+				<p>Saya Bisa Melakukan Apa Saja Asalkan Ada Money Hehe</p>
+		</div>
+	</div>
+</section>
+
+<!--bagian portofolio pake flexbox-->
+<section id="portfolio" class="portfolio">
+	<h2 class="judul-besar">Portfolio Saya</h2>
+	<div class="portfolio-container">
+		<div class="portofolio-card">
+			<img src="porto1.png" alt="Portofolio 1">
+			<h3>Website Portofolio Pertama Saya</h3>
+			<p>HTML, CSS, JavaScript</p>
+			<a href="https://nandiodifanusantara.netlify.app/" class="tmbl-portofolio">Ke Websitenya</a>
+		</div>
+		<div class="portofolio-card">
+			<img src="porto2.png" alt="Portofolio 2">
+			<h3>Website Organisasi Pencak Silat</h3>
+			<p>HTML, CSS, JavaScript</p>
+			<a href="https://panglipurbogorselatan.netlify.app/" class="tmbl-portofolio">Ke Websitenya</a>
+		</div>
+    </div>
+</section>
+
+<!--kontak-->
+<section id="contact" class="contact">
+	<h2 class="judul-besar">kirim pesan ke saya</h2>
+	<form class="contact-form">
+		<label for="nama">Nama:</label>
+		<input type="text" id="nama" placeholder="Masukkan nama Anda">
+		<label for="kontak">Email:</label>
+		<input type="text" id="kontak" placeholder="Email">
+		<label for="pesan">Pesan:</label>
+		<textarea id="pesan" rows="5" placeholder="Tulis pesan Anda"></textarea>
+		<button type="submit" class="tmbl-kirim">Kirim Pesan</button>
+	</form>
+</section>
+
+	<!-- FOOTER -->
+<footer class="footer">
+	<p>Nandio</p>
+</footer>
+
+</body>
+</html>

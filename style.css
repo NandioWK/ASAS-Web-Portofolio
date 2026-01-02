@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/*navbar buat level 1*/
+.navbar {
+    background-color: #4a90e2;
+    padding: 15px;
+}
+
+.nav-atas {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-atas a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    /* transisi 1 buat level 2*/
+    transition: background-color 0.3s;
+}
+
+/* hover 1 buat level 1*/
+.nav-atas a:hover {
+    background-color: #357abd;
+    border-radius: 5px;
+}
+
+/*navbar*/
+@media (max-width: 768px) {
+    .nav-atas {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+/*hero*/
+.hero {
+    background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f7 100%);
+    background-image: 
+    linear-gradient(135deg, #e8f4f8 0%, #d4e9f7 100%),
+    repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(74, 144, 226, 0.03) 35px, rgba(74, 144, 226, 0.03) 70px);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+
+/*before */
+.hero::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #4a90e2, transparent);
+}
+
+.hero h1 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.tombol {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #27ae60;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.tombol:hover {
+    background-color: #229954;
+    transform: scale(1.05);
+}
+
+/*about*/
+.about {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.judul-besar {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    /*after buat level 2*/
+    position: relative;
+    padding-bottom: 15px;
+}
+
+/*after buat level 2*/
+.judul-besar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #4a90e2;
+}
+
+.about p {
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.judul-kecil {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+/*css grid skill buat level 2*/
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skill-box {
+    background-color: #f4f4f4;
+    padding: 25px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    /*transisi ke 3 buatt level 2*/
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+/*hover ke 3 sama transform ke 2*/
+.skill-box:hover {
+    transform: translateY(-8px);
+    border-color: #4a90e2;
+}
+
+.skill-box h4 {
+    color: #4a90e2;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.skill-box p {
+    color: #666;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*portofolio pakai flexbox*/
+.portfolio {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+/*flexbox untuk layout*/
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.portofolio-card {
+    background-color: white;
+    width: 350px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    /*transisi buat level 2*/
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/*hover ke 4 dan transisi ke 3 buat level 1 dan 2*/
+.portofolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.portofolio-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portofolio-card h3 {
+    padding: 15px 15px 5px 15px;
+    color: #2c3e50;
+}
+
+.portofolio-card p {
+    padding: 0 15px 15px 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.tmbl-portofolio {
+    display: inline-block;
+    margin: 0 15px 15px 15px;
+    padding: 8px 20px;
+    background-color: #4a90e2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/*hover ke 5 buat level 1*/
+.tmbl-portofolio:hover {
+    background-color: #357abd;
+}
+
+/*kontak*/
+.contact {
+    padding: 50px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/*form kontak buat level 2*/
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    /* TRANSITION (Level 2) */
+    transition: border-color 0.3s;
+}
+
+/*hover ke 6 buat level 1*/
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.tmbl-kirim {
+    width: 100%;
+    padding: 12px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/*hover ke 7 buat level 1*/
+.tmbl-kirim:hover {
+    background-color: #229954;
+    transform: scale(1.02);
+}
+
+/*footerr*/
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
